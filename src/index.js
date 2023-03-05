@@ -61,9 +61,11 @@ app.post('/token', (req, res) => {
   }
 });
 
-// About - page
-// TODO: frontend need to display this page with "Hello World" upon correct
-// JWT token used.
+/**
+ * Challenge 1 - Part 2
+ * About - page
+ * TODO: frontend need to display this page with "Hello World" upon correct JWT token used.
+ * */
 app.get('/about', (req, res) => {
   const src = path.join(dirname, './views/about.html');
   const { accessToken } = req.body;
