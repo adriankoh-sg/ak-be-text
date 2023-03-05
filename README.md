@@ -22,4 +22,37 @@ npm install
 npm start
 ```
 
+The App will run in http://localhost:3000
+
 ## To Check the BE response
+
+Postman is used to check the resquest and response from the backend application.
+Postman [collection](./postman/My%20NodeJS%20Backend.postman_collection.json)
+
+### Check the login
+
+Using postman, inside the body request:
+
+```json
+{
+  "username": "adriankoh",
+  "password": "123454321"
+}
+```
+
+![token](./doc/screenshot01.png)
+
+Using browser, it will display a login form.
+![browser](./doc/screenshot03.png)
+
+### Login Success
+
+Upon success, an `accessToken` will be returned.
+Use the `accessToken` to access `/about`.
+
+If the accessToken is correct, the data will return the username and password from DB.
+
+> NOTE: password is a md5 hash of the password.
+
+Using postman:
+![about](./doc/screenshot02.png)
