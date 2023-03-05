@@ -9,6 +9,4 @@ const fakeDB = {
   },
 };
 
-module.export = {
-  fakeDB,
-};
+export default fakeDB;
