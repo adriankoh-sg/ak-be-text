@@ -1,66 +1,58 @@
 {
-	"info": {
-		"_postman_id": "875eba0c-72a5-41a1-824d-3effe4bb6312",
-		"name": "My NodeJS Backend",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "16335120"
-	},
-	"item": [
-		{
-			"name": "token",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"adriankoh\",\r\n    \"password\": \"123454321\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/token",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"token"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "about",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkcmlhbmtvaCIsInBhc3N3b3JkIjoiYzk4NzAzYWVkNjkyODQ1NTJmZmZmZWEyNWExNzA2ZDkiLCJpYXQiOjE2Nzc5ODg4NjB9.T5cNapuuOhtvsFhns9ip8nSKj1FKlDFyKWH54vpDgQE\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/about",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"about"
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "875eba0c-72a5-41a1-824d-3effe4bb6312",
+    "name": "My NodeJS Backend",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "16335120"
+  },
+  "item": [
+    {
+      "name": "token",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"adriankoh\",\r\n    \"password\": \"123454321\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/token",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["token"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "about",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkcmlhbmtvaCIsInBhc3N3b3JkIjoiYzk4NzAzYWVkNjkyODQ1NTJmZmZmZWEyNWExNzA2ZDkiLCJpYXQiOjE2Nzc5ODg4NjB9.T5cNapuuOhtvsFhns9ip8nSKj1FKlDFyKWH54vpDgQE\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/about",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["about"]
+        }
+      },
+      "response": []
+    }
+  ]
 }
