@@ -74,12 +74,12 @@ app.get('/about', (req, res) => {
   if (accessToken) {
     const decode = jwt.verify(accessToken, auth.secret);
 
+    // response with json data
     res.json({
       login: true,
       data: decode,
     });
   }
-  res.sendFile(src);
 });
 
 // error page
